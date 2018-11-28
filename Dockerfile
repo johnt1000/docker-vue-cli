@@ -8,6 +8,6 @@ RUN npm install -g -q \
     @vue/cli-init \
     quasar-cli
 
-RUN mkdir /app
-COPY . /app
 WORKDIR /app
+
+COPY . /app
