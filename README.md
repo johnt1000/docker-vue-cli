@@ -8,9 +8,10 @@ This container will have the items necessary to run the vue-cli.
 
 # How to use this image
 
-### Create a `Dockerfile` in your PHP project
+### Create a `Dockerfile` in your project
 
 ```dockerfile
+# Dockerfile
 FROM jonatasra/docker-vue-cli
 
 WORKDIR /app
@@ -31,7 +32,8 @@ $ docker run -it --rm --name my-running-app my-vue-app sh
 
 Using this via docker-compose:
 
-```dockerf
+```dockerfile
+# docker-compose.yaml
 version: '3'
 services:
   vue:
@@ -43,7 +45,7 @@ services:
       - 8080:8080
 ```
 
-## `php:<version>-alpine`
+## `jonatasra/docker-vue-cli:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
