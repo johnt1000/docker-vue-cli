@@ -12,7 +12,7 @@ This container will have the items necessary to run the vue-cli.
 
 ```dockerfile
 # Dockerfile
-FROM jonatasra/docker-vue-cli
+FROM jonatasra/vue-cli
 
 WORKDIR /app
 
@@ -37,7 +37,7 @@ Using this via docker-compose:
 version: '3'
 services:
   vue:
-    image: jonatasra/docker-vue-cli
+    image: jonatasra/vue-cli
     command: npm run dev
     volumes:
       - .:/app
@@ -45,7 +45,7 @@ services:
       - 8080:8080
 ```
 
-## `jonatasra/docker-vue-cli:<version>-alpine`
+## `jonatasra/vue-cli:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
