@@ -8,7 +8,7 @@ This container will have the items necessary to run the vue-cli.
 
 # How to use this image
 
-### Create a `Dockerfile` in your project
+## Create a `Dockerfile` in your project
 
 ```dockerfile
 # Dockerfile
@@ -44,6 +44,9 @@ services:
     ports:
       - 8080:8080
 ```
+
+# Image Variants
+The react-cli images come in many flavors, each designed for a specific use case.
 
 ## `jonatasra/vue-cli:<version>-alpine`
 
